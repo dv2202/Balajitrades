@@ -7,16 +7,20 @@ import pic2 from '../assets/vecteezy_3d-business-money-saving-with-flying-coin-c
 import pic3 from '../assets/vecteezy_analitics-3d-icon-illustration-for-your-website-user_9418807.png'
 import "../index.css"
 import pic4 from "../assets/jump_boy.png"
+import pic5 from "../assets/For_responcive.png"
 const Home = () => {
+  const isSmallScreen = window.innerWidth <= 1300;
   return (
-    <div className='flex w-11/12 mx-auto justify-center items-center  max-w-7xl '>
-      <div className='w-[60%] flex flex-col gap-y-8'>
-        <h1 className='flex items-center text-[55px] font-[800]'>
-          <span className='text-purple-500 font-rubik'>{`Trade `}</span>
+    <>
+    <div className={`h-[50px] hidden md:block `}></div>
+    <div className={`flex  md:flex-row  md:h-[100vh] w-11/12 mx-auto justify-center items-center max-w-7xl gap-y-2 flex-col-reverse `} id="home">
+      <div className='w-[60%] flex flex-col gap-y-5 md:gap-y-8'>
+        <h1 className='flex flex-col md:flex-row items-center text-[37px] md:text-[55px] font-bold md:font-[800]'>
+          <span className='text-purple-500 font-rubik'>Trade &nbsp;</span>
           <Typed
             strings={[
-                "\u00A0with BalaJi Trading",
-                "\u00A0by SMC Software",
+                " with BalaJi Trading",
+                " by SMC Software",
             ]}
             typeSpeed={100}
             backSpeed={80}
@@ -24,11 +28,11 @@ const Home = () => {
             loop
           />
         </h1>
-        <p className='font-rubik text-xl justify font-thin'>
+        <p className='font-rubik text-xl text-center md:text-justify font-thin'>
           Master Strategic Market Craftsmanship with <br/> our expert courses and cutting-edge software
         </p>
-        <div className='flex items-center gap-4'>
-          <Button active={true} linkto={'https://www.google.com'}>Join us</Button>
+        <div className='flex justify-center md:justify-start md:items-center gap-4'>
+          <Button active={true} linkto={'https://t.me/+mrgTcGb6dNIyMWQ9'}>Join us</Button>
           <Button active={false} linkto={'https://www.youtube.com/channel/UCgNzXDnv71FTbfaVqhaXPKg'}>Watch Videos</Button>
         </div>
       </div>
@@ -38,14 +42,15 @@ const Home = () => {
 
 
 
-      <div className='w-[45%] relative ml-4'>
-        <img src={pic1} alt="" className='h-[34rem] ' />
-        <img src={pic2} alt="" className='h-[8rem] absolute top-8 right-[7.375rem] -rotate-6 animate-boy-animation' />
-        <img src={pic3} alt="" className='h-[4rem] absolute top-[10.75rem] left-[6.938rem] -rotate-6 animate-boy-animation' />
-        <img src={pic4} alt="" className='h-[15rem] absolute top-[4.75rem] left-[8.338rem] -rotate-6 animate-bounce-slow' />
+      <div className='w-[100%] md:w-[45%] relative ml-4'>
+
+          <img src={pic1} alt="" className=' w-[63rem] md:w-full h-[33rem] md:h-[34rem]' />
+          <img src={pic2} alt="" className='h-[8rem] absolute top-8 right-[7.375rem] -rotate-6 animate-boy-animation hidden md:block' />
+          <img src={pic3} alt="" className='h-[4rem] absolute top-[10.75rem] left-[6.938rem] -rotate-6 animate-boy-animation hidden md:block' />
+          <img src={pic4} alt="" className='h-[15rem] absolute top-[4.75rem] left-[8.338rem] -rotate-6 animate-bounce-slow hidden md:block' />
       </div>
     </div>
-    
+    </>
   );
 };
 

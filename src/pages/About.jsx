@@ -1,16 +1,17 @@
 import React from 'react';
 import instructor from '../assets/Profile.png';
 import { TiTick } from "react-icons/ti";
-
+import './About.css'
 const About = () => {
   return (
-    <div id="about" className="bg-cover bg-center h-screen mt-10" style={{ backgroundImage: `url('../assets/white-abstract-background/4858794.jpg')` }}>
+    <div id="about" className=" bg-cover bg-center md:h-screen mb-10 md:mb-0mt-10 relative">
+       
       <div className='w-11/12 flex mx-auto'>
-        <h1 className='text-[50px] font-bold'>Meet Your <span className='text-purple-500'>Instructor</span></h1>
+        <h1 className='text-[50px] mt-5 font-bold'>Meet Your <span className='text-purple-500'>Instructor</span></h1>
       </div>
 
       <div className='h-[2px] mx-auto bg-slate-500 w-11/12 mt-5'></div>
-      <div className='w-11/12 mx-auto mt-20 flex flex-col flex-wrap items-center justify-center  gap-x-5'>
+      <div className='w-11/12 mx-auto mt-10 flex flex-col flex-wrap items-center justify-center gap-y-10 gap-x-5'>
         <div className='mx-auto w-11/12 flex flex-col justify-center items-center'>
           <img src={instructor} alt="" className='h-[250px] w-[250px]' />
           <h2 className='text-[22px] font-bold text-purple-500'>Devansh Vishwakarma</h2>
