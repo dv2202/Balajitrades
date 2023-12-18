@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer'
+import PayementSoftware from './pages/PayementSoftware';
 function App() {
   return (
     <div>

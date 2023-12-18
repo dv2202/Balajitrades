@@ -4,7 +4,7 @@ import { TiTick } from "react-icons/ti";
 import './About.css'
 const About = () => {
   return (
-    <div id="about" className=" bg-cover bg-center md:h-screen mb-10 md:mb-0mt-10 relative">
+    <div id="about" className=" bg-cover bg-center lg:flex lg:flex-col lg:items-center lg:justify-center md:h-screen mb-10 md:mb-0mt-10 relative">
        
       <div className='w-11/12 flex mx-auto'>
         <h1 className='text-[50px] mt-5 font-bold'>Meet Your <span className='text-purple-500'>Instructor</span></h1>
