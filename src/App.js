@@ -6,15 +6,27 @@ import { Route, Routes } from 'react-router-dom';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer'
+import Payment from './pages/Payment';
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Home />
-      <About/>
-      <Products/>
-      <Contact/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={
+          <div>
+            <Navbar/>
+            <Home />
+            <About/>
+            <Products/>
+            <Contact/>
+            <Footer/>
+          </div>
+        }/>
+        <Route path='/payment' element={
+          <div>
+            <Payment/>
+          </div>
+        }/>
+      </Routes>
     </div>
   );
 }
