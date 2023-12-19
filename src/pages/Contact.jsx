@@ -12,7 +12,7 @@ const Contact = () => {
             <div className='h-[2px] w-[70%] ml-auto items-end mt-28 bg-slate-200'></div>
           </div>
         </div>
-        <div className='mt-20 w-11/12 flex flex-col md:space-y-20'>
+        <div className='mt-20 md:pl-[10px] flex flex-col md:space-y-20'>
             <div className='font-bold w-full text-black text-6xl font-sans mx-auto text-center'>
               Join Our Trading Community 
               <p className='text-slate-400 flex font-medium justify-center items-center text-2xl pt-4'>Connect with like-minded traders and explore opportunities<br/>Stay updated with market trends and insights.</p>

@@ -6,7 +6,8 @@ import { Route, Routes } from 'react-router-dom';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer'
-import Payment from './pages/Payment';
+import PayementSoftware from './pages/PayementSoftware';
+
 function App() {
   return (
     <div>
@@ -23,7 +24,7 @@ function App() {
         }/>
         <Route path='/payment' element={
           <div>
-            <Payment/>
+            <PayementSoftware/>
           </div>
         }/>
       </Routes>

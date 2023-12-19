@@ -2,9 +2,11 @@ import React from 'react'
 import temp_img from '../assets/animation.png'
 import Button from '../components/Button'
 import { MdCircle } from "react-icons/md";
+import { Link } from 'react-scroll';
+
 const Products = () => {
   return (
-    <div id='product' className='bg-[#f8f8fa]'>
+    <div id='product' className='bg-[#f8f8fa] lg:flex lg:flex-col lg:items-center lg:justify-center h-screen'>
     <div className='text-purple-500 mx-auto text-3xl font-semibold pt-6 text-center'>Course and Software</div>
       <div className=' flex flex-col sm:flex-col gap-y-10 md:flex-row rounded-xl gap-x-10 justify-center items-center mx-auto  pt-10 pb-10'>
 
@@ -17,7 +19,7 @@ const Products = () => {
                     Balaji SMC 3.0 Software 
                 </h5>
                 <h6 className='font-extrabold text-lg  flex flex-row gap-x-2 items-center '>&#8377;4000/- <span className='line-through font-normal'>&#8377;8000/-</span><div className='bg-green-400 font-bold text-sm text-white rounded-md px-2 py-1'>50% off</div></h6>
-                <Button active="true" linkto="">Buy Now</Button>
+                <Button active="true" linkto="/payment">Buy Now</Button>
                 
                 <p className="font-bold text-xl text-gray-700 ">
                     This software includes :
@@ -48,7 +50,7 @@ const Products = () => {
                      SMC Master MentorShip
                 </h5>
                 <h6 className='font-extrabold text-lg  flex flex-row gap-x-2 items-center '>&#8377;5000/- </h6>
-                <Button active="true" linkto="">Comming Soon</Button>
+                <Button active="true" linkto="/payment">Comming Soon</Button>
                 
                 <p className="font-bold text-xl text-gray-700 ">
                     This course includes :

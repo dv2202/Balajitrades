@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import main_logo from '../assets/ Main_logo.png';
 import { Link } from 'react-scroll';
-
+// import { Link as RouterLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('');
@@ -34,7 +34,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-85}
                 duration={300}
-                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'home' ? 'text-purple-500' : ''}`}
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 cursor-pointer md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'home' ? 'text-purple-500' : ''}`}
                 onSetActive={() => handleSetActiveLink('home')}
               >
                 Home
@@ -47,7 +47,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-85}
                 duration={300}
-                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'about' ? 'text-purple-500' : ''}`}
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent cursor-pointer md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'about' ? 'text-purple-500' : ''}`}
                 onSetActive={() => handleSetActiveLink('about')}
               >
                 About
@@ -60,7 +60,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-85}
                 duration={300}
-                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'product' ? 'text-purple-500' : ''}`}
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent cursor-pointer md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'product' ? 'text-purple-500' : ''}`}
                 onSetActive={() => handleSetActiveLink('product')}
               >
                 Product
@@ -73,7 +73,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-85}
                 duration={300}
-                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'contact' ? 'text-purple-500' : ''}`}
+                className={`block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent cursor-pointer md:border-0 md:hover:text-purple-500 md:p-0 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent ${activeLink === 'contact' ? 'text-purple-500' : ''}`}
                 onSetActive={() => handleSetActiveLink('contact')}
               >
                 Contact
