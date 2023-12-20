@@ -2,7 +2,6 @@ import React from 'react'
 import temp_img from '../assets/animation.png'
 import Button from '../components/Button'
 import { MdCircle } from "react-icons/md";
-import { Link } from 'react-scroll';
 
 const Products = () => {
   return (

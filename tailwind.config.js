@@ -17,6 +17,10 @@ module.exports = {
         'boyAnimation':{
           '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
           '50%': { transform: 'translateY(-10px) rotate(5deg)' },
+        },
+        backgroundImage: {
+          'hero-pattern': "url('./assets/grungy-purple-marble-textured.jpg')",
+          'footer-texture': "url('/img/footer-texture.png')",
         }
       }
       

@@ -1,0 +1,7 @@
+.bgImage{
+    background-image: url('../assets/abstract-background-with-ink.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
