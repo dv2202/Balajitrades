@@ -6,7 +6,7 @@ import './paymentCss.css'
 const PayementSoftware = () => {
   return (
     < div className="bgImage flex flex-col">
-     <p className='w-4/5 mx-auto text-center text-2xl font-bold italic mt-9'>Instruction: Share the screenshot after completion of payment in Telegram to <a href="https://t.me/devansh2202" target="_blank"><span className='underline text-[#4952fb]'>@devansh2202</span></a> with your active Telegram ID.</p>
+     <p className='w-4/5 mx-auto text-center text-2xl font-bold italic mt-9'>Instruction: Share the screenshot after completion of payment in Telegram to <a href="https://t.me/devansh2202" target="_blank" rel="noreferrer"><span className='underline text-[#4952fb]'>@devansh2202</span></a> with your active Telegram ID.</p>
     <div className='flex mx-auto items-center justify-center h-[100%] w-[100%]'>
         <div className='w-4/5 mx-auto flex md:flex-row flex-col-reverse items-center sm:gap-3 '>
             <div className='w-[50%] flex '>
