@@ -2,7 +2,7 @@ import React from 'react'
 import temp_img from '../assets/animation.png'
 import Button from '../components/Button'
 import { MdCircle } from "react-icons/md";
-
+import software from "../assets/Black Professional Finance YouTube Thumbnail.png"
 const Products = () => {
   return (
     <div id='product' className='bg-[#f8f8fa] lg:flex lg:flex-col lg:items-center lg:justify-center h-screen'>
@@ -11,7 +11,7 @@ const Products = () => {
 
             <div className="w-[338px] bg-white border border-gray-200 rounded-lg shadow transition duration-150 ease-out hover:scale-105">
             <a href="#">
-                <img className="rounded-t-lg h-[200px] w-full" src={temp_img} alt=""/>
+                <img className="rounded-t-lg h-[199px] w-full" src={software} alt=""/>
             </a>
             <div className="p-5 flex gap-y-2 flex-col">
                 <h5 className="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900">
