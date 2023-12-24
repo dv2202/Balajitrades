@@ -27,6 +27,7 @@ function App() {
             <PayementSoftware/>
           </div>
         }/>
+        
       </Routes>
     </div>
   );
